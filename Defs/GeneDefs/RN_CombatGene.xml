@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <GeneDef>
+    <defName>RN_Pugilist</defName>
+    <label>pugilist</label>
+    <labelShortAdj>strong</labelShortAdj>
+    <description>Engineered for pure CQC dominance, this gene provides extraordinary speed and accuracy in melee strikes. Wounds regenerate (minor). Practically "unstoppable".</description>
+
+    <iconPath>UI/Icons/Genes/Gene_StrongMeleeDamage</iconPath>
+    <displayCategory>ComboGenes</displayCategory>
+
+    <statFactors>
+      <MeleeDamageFactor>1.5</MeleeDamageFactor>
+      <MeleeCooldownFactor>0.8</MeleeCooldownFactor>
+      <MeleeDodgeChance>1.3</MeleeDodgeChance>
+      <MeleeHitChance MayRequire="ElSov.Highborn">1.2</MeleeHitChance>
+      <StaggerDurationFactor>0</StaggerDurationFactor>
+    </statFactors>
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension">
+
+      </li>
+    </modExtensions>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-6</biostatMet>
+
+    <symbolPack>
+      <wholeNameSymbols>
+        <li><symbol>basher</symbol></li>
+        <li><symbol>striker</symbol></li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li><symbol>bash</symbol></li>
+        <li><symbol>strong</symbol></li>
+        <li><symbol>strike</symbol></li>
+        <li><symbol>hercu</symbol></li>
+        <li><symbol>achillo</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+
+    <exclusionTags>
+      <li>MeleeDodge</li>
+      <li>RangedAttackSpeed</li>
+      <li>MeleeAttackSpeed</li>
+      <li>MeleeDamage</li>
+      <li>AG_Regeneration</li>
+      <li>Stoppable</li>
+      <li>ViolenceDisabled</li>
+    </exclusionTags>
+
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension">
+        <hediffToWholeBody>RN_RegenerationMinor</hediffToWholeBody>
+      </li>
+    </modExtensions>
+  </GeneDef>
+</Defs>

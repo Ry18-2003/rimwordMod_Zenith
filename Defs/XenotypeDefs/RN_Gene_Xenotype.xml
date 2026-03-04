@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <XenotypeDef>
+		<defName>RN_Hunters</defName>
+		<label>Hunters</label>
+		<description>Hunters are generally masters of hand-to-hand combat, with good handling, crafting, and mobility techniques. They are also excellent communicators and possess one of the best learning capacities in the universe. However, they are poorly adapted to harsh climates, suffer from chronic unhappiness, and have a low reproduction rate. Inept at mining, they practically created the Dirtmole.</description>
+		<iconPath>XenotypeIcons/RN_Hunter</iconPath>
+		<genes>
+			<li>RN_TempWeakness</li>
+			<li>RN_HandsTailWings</li>
+			<li>RN_FoodEfficience</li>
+			<li>RN_HyperLearner</li>
+			<li>RN_Pessimist</li>
+			<li>RN_TheEndLineage</li>
+			<li>RN_Pugilist</li>
+			<li>RN_MiningYield_Low</li>
+			<li>RN_DisturbedShooter</li>
+			<li>DarkVision</li> 
+            <li>AptitudeRemarkable_Melee</li> 
+            <li>AptitudeStrong_Crafting</li>
+            <li>AptitudeTerrible_Artistic</li>
+			<li>AptitudeRemarkable_Social</li>
+			<li>AptitudeTerrible_Mining</li>
+			<li>AptitudeStrong_Medicine</li>
+			<li>AptitudeStrong_Intellectual</li>
+			<li MayRequire="vanillaracesexpanded.genie">VRE_BlueBlood</li>
+		</genes>
+		<inheritable>true</inheritable>
+	</XenotypeDef>
+	<XenotypeDef>
+		<defName>RN_PsyHunters</defName>
+		<label>Psy Hunters</label>
+		<description>The Psy Hunters gave up some skills in order to evolve psychically, yet most are still masters of hand-to-hand combat, with good handling and mobility techniques. They have clear communication and possess one of the greatest learning capacities in the universe. However, they are poorly adapted to harsh climates, suffer from chronic unhappiness exacerbated by their psychic powers, and have a low reproduction rate. Inept at mining, they practically created DirtMole.</description>
+		<iconPath>XenotypeIcons/RN_PsyHunter</iconPath>
+		<genes>
+			<li>RN_TempWeakness</li>
+			<li>RN_HandsTailWings</li>
+			<li>RN_FoodEfficience</li>
+			<li>RN_HyperLearner</li>
+			<li>RN_Pessimist</li>
+			<li>RN_TheEndLineage</li>
+			<li>RN_Pugilist</li>
+			<li>RN_MiningYield_Low</li>
+			<li>RN_DisturbedShooter</li>
+			<li>RN_EVOPsylink</li>
+			<li>DarkVision</li> 
+			<li>AptitudeRemarkable_Melee</li> 
+            <li>AptitudeTerrible_Artistic</li>
+			<li>AptitudeTerrible_Mining</li>
+			<li>AptitudeStrong_Social</li>
+			<li>AptitudeStrong_Intellectual</li>
+			<li MayRequire="vanillaracesexpanded.genie">VRE_BlueBlood</li>
+		</genes>
+		<inheritable>true</inheritable>
+	</XenotypeDef>
+</Defs>

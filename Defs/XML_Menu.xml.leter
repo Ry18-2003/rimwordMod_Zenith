@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <XmlExtensions.SettingsMenuDef>
+        <defName>MeuMod_Settings</defName>
+        <modId>SeuNome.RNXenotypes</modId>
+        <label>RN Xenotypes Settings</label>
+        
+        <settings>
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>ativar_RN_TempWeakness</key> <!-- Nome da variável salva -->
+                <label>Ativar gene: Temp Weakness</label>
+                <defaultValue>true</defaultValue>
+            </li>
+            
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>ativar_RN_Pugilist</key>
+                <label>Ativar gene: Pugilist</label>
+                <defaultValue>true</defaultValue>
+            </li>
+        </settings>
+    </XmlExtensions.SettingsMenuDef>
+</Defs>

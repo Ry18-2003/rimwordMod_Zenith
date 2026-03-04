@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <AbilityDef>
+    <defName>LeapTailWings</defName>
+    <label>Leap</label>
+    <description>Leap to a nearby location using powerful limbs and tail momentum.</description>
+    <iconPath>UI/Abilities/RN_WingShortJump</iconPath>
+    <cooldownTicksRange>1250</cooldownTicksRange>
+
+    <verbProperties>
+        <verbClass>Verb_CastAbilityJump</verbClass>
+        <range>9.9</range>
+        <targetParams>
+            <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+    </verbProperties>
+
+  </AbilityDef>
+
+</Defs>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Se o jogador DESMARCOU o botão... -->
+    <Operation Class="XmlExtensions.PatchOperationSetting">
+        <settingKey>ativar_RN_TempWeakness</settingKey>
+        <value>false</value>
+        <apply Class="PatchOperationSequence">
+            <operations>
+                <!-- Remove dos Xenotipos (para novos não nascerem com ele) -->
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/XenotypeDef[defName="RN_hunters"]/genes/li[text()="RN_TempWeakness"]</xpath>
+                </li>
+                <!-- Piora a chance dele aparecer aleatoriamente para 0 -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/GeneDef[defName="RN_TempWeakness"]/selectionWeight</xpath>
+                    <value>
+                        <selectionWeight>0</selectionWeight>
+                    </value>
+                </li>
+            </operations>
+        </apply>
+    </Operation>
+</Patch>

@@ -1,0 +1,9 @@
+<!-- <?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <PawnKindDef>
+    <defName>SuperSoldado_World</defName>
+    <label>super soldado</label>
+    <race>Human</race>
+    <combatPower>150</combatPower>
+  </PawnKindDef>
+</Defs> -->

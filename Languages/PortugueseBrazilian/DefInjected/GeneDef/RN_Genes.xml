@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <RN_MiningYield_Low.label>mineração é difícil</RN_MiningYield_Low.label>
+  <RN_MiningYield_Low.labelShortAdj>mineiro ruim</RN_MiningYield_Low.labelShortAdj>
+  <RN_MiningYield_Low.description>Portadores deste gene são maus mineradores e extraem menos minerais da rocha.</RN_MiningYield_Low.description>
+
+  <RN_DisturbedShooter.label>atirador perturbado</RN_DisturbedShooter.label>
+  <RN_DisturbedShooter.description>Os portadores desse gene acreditam que atirar é mais uma arte do que uma habilidade. Eles "admiram" o alvo por um tempo antes de atirar. Ocasionalmente, "erram" um tiro para observar a reação do alvo.</RN_DisturbedShooter.description>
+  
+  <RN_Pugilist.label>pugilista</RN_Pugilist.label>
+  <RN_Pugilist.labelShortAdj>forte</RN_Pugilist.labelShortAdj>
+  <RN_Pugilist.description>Projetado para domínio absoluto em combate corpo a corpo, este gene proporciona velocidade e precisão extraordinárias em golpes rápidos. Ferimentos se regeneram (em menor escala). Praticamente "imparável".</RN_Pugilist.description>
+  
+  <ComboGenes.label>Genes fortes</ComboGenes.label>
+
+
+  <RN_LibidoHigh_LowFertility.label>desejo fértil, ventre estéril</RN_LibidoHigh_LowFertility.label>
+  <RN_LibidoHigh_LowFertility.description>Portadores têm um forte desejo sexual, mas sucesso reprodutivo reduzido.</RN_LibidoHigh_LowFertility.description>
+
+  <!-- Tradução dos customEffectDescriptions (baseado na ordem da lista) -->
+  <RN_LibidoHigh_LowFertility.customEffectDescriptions.0>Tentativas de romance sempre são bem-sucedidas.</RN_LibidoHigh_LowFertility.customEffectDescriptions.0>
+  <RN_LibidoHigh_LowFertility.customEffectDescriptions.1>Ganha um laço psíquico com o primeiro parceiro romântico.</RN_LibidoHigh_LowFertility.customEffectDescriptions.1>
+  <RN_LibidoHigh_LowFertility.customEffectDescriptions.2>Aumenta a chance de fazer amor.</RN_LibidoHigh_LowFertility.customEffectDescriptions.2>
+  <RN_LibidoHigh_LowFertility.customEffectDescriptions.3>Alguns traços são compartilhados com o parceiro(a).</RN_LibidoHigh_LowFertility.customEffectDescriptions.3>
+
+  <!-- Intolerant -->
+  <RN_TempWeakness.label>intolerante à temperatura</RN_TempWeakness.label>
+  <RN_TempWeakness.labelShortAdj>frágil</RN_TempWeakness.labelShortAdj>
+  <RN_TempWeakness.description>Indivíduos com este gene são muito menos adaptáveis a mudanças de temperatura.</RN_TempWeakness.description>
+
+  <!-- Hands/Tail/Wings -->
+  <RN_HandsTailWings.label>primata evo</RN_HandsTailWings.label>
+  <RN_HandsTailWings.description>O portador possui dedos alongados, uma cauda ágil e um par de asas planadoras. Elas funcionam como membros extras e estabilizadores, aumentando significativamente a manipulação e mobilidade.</RN_HandsTailWings.description>
+
+  <!-- Food Efficient -->
+  <RN_FoodEfficience.label>adaptado a comer</RN_FoodEfficience.label>
+  <RN_FoodEfficience.description>Portadores deste gene possuem dentes fortes e capazes, além de um estômago incrivelmente grande.</RN_FoodEfficience.description>
+
+   <!-- Learning -->
+  <RN_Sleep.label>hiper aprendiz</RN_Sleep.label>
+  <RN_Sleep.description>Portadores deste gene possuem um metabolismo neural hiper-eficiente. Eles necessitam de significativamente menos descanso, processam informações 50% mais rápido e retêm memória muscular perfeitamente, o que significa que nunca sofrem com a perda de nível de habilidades com o passar do tempo.</RN_Sleep.description>
+  <RN_Sleep.customEffectDescriptions.0>Os níveis de habilidade nunca diminuem com o tempo.</RN_Sleep.customEffectDescriptions.0>
+
+  <!-- Pessimist -->
+  <RN_Pessimist.label>infeliz</RN_Pessimist.label>
+  <RN_Pessimist.description>Portadores deste gene têm predisposição a percepções pessimistas. Eles tendem a interpretar as coisas de forma negativa e têm um humor geral mais baixo do que os outros.</RN_Pessimist.description>
+
+
+  <!-- EVO Psylink -->
+  <RN_EVOPsylink.label>psylink evo</RN_EVOPsylink.label>
+  <RN_EVOPsylink.description>Portadores deste gene possuem um cérebro levemente reestruturado, o que lhes proporciona um psylink natural e muitas capacidades psíquicas diferentes.</RN_EVOPsylink.description>
+  <RN_EVOPsylink.customEffectDescriptions.0>Perder este gene fará com que o colono perca todos os níveis de psylink, embora não esqueça os psycasts (poderes psíquicos) que já tenha aprendido.</RN_EVOPsylink.customEffectDescriptions.0>
+
+  <!-- Pensamento do Gene RN_Pessimist -->
+  <RN_Pessimist.stages.0.label>depressão extrema genética</RN_Pessimist.stages.0.label>
+  <RN_Pessimist.stages.0.description>Penalidade natural do gene 'infeliz'.</RN_Pessimist.stages.0.description>
+
+  <!-- Asas -->
+  <RN_Glidewings.label>asas planadoras</RN_Glidewings.label>
+  <RN_Glidewings.description>Um pequeno par de asas crescendo das omoplatas desta pessoa. Elas não são capazes de voar, mas evitam que o usuário seja desacelerado pela maioria dos obstáculos.</RN_Glidewings.description>
+
+  <!-- Regeneração -->
+  <RN_RegenerationMinor.label>regeneração menor</RN_RegenerationMinor.label>
+  <RN_RegenerationMinor.description>Esta pessoa possui uma tênue rede de mecanitos especializados em sua corrente sanguínea que, periodicamente, tratam feridas internas e as regeneram sem necessidade de descanso.</RN_RegenerationMinor.description>
+
+
+</LanguageData>

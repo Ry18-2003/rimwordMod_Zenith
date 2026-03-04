@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<GeneDef>
+		<defName>RN_MiningYield_Low</defName>
+		<label>mineral ineptitude</label>
+		<labelShortAdj>shoddy miner</labelShortAdj>
+		<description>Carriers of this gene are shoddy miners and yield fewer minerals from stone.</description>
+		<iconPath>Genes/Gene_AwfulMining</iconPath>
+		<displayCategory>ComboGenes</displayCategory>
+		<displayOrderInCategory>5001</displayOrderInCategory>
+		<selectionWeight>0</selectionWeight>
+        <aptitudes>
+            <Mining>-6</Mining>
+        </aptitudes>
+		<statFactors>
+			<MiningYield>0.6</MiningYield>
+		</statFactors>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>5</biostatMet>
+		<exclusionTags>
+			<li>AG_MiningYield</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>RN_DisturbedShooter</defName>
+		<label>disturbed shooter</label>
+		<description>Carriers of this gene believe that shooting is more of an art than a skill. They will "admire" the target a little longer before shooting. Occasionally they will "miss" a shot to observe the target's reaction.</description>
+		<iconPath>Genes/Gene_AwfulShooting</iconPath>
+		<displayCategory>ComboGenes</displayCategory>
+		<displayOrderInCategory>5002</displayOrderInCategory>
+
+		<aptitudes>
+			<Shooting>-2</Shooting>
+			<Artistic>-4</Artistic>
+		</aptitudes>
+		
+		<statFactors>
+			<RangedCooldownFactor>1.25</RangedCooldownFactor>
+			<AimingAccuracy MayRequire="CETeam.CombatExtended">0.85</AimingAccuracy>
+		</statFactors>
+
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>5</biostatMet> 
+		<exclusionTags>
+			<li>Shooting</li>
+		</exclusionTags>
+	</GeneDef>
+</Defs>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <!-- Gategory Ex -->
+    <GeneCategoryDef>
+        <defName>ComboGenes</defName>
+        <label>Strong genes</label>
+        <displayPriorityInXenotype>646</displayPriorityInXenotype>
+    </GeneCategoryDef>
+    <!-- Gene Base -->
+<!--     <GeneDef>
+        <defName>AncientOverlordGene</defName>
+        <label>gene do senhor ancião</label>
+        <description>Uma combinação de genes antigos extremamente poderosos.</description>
+
+		<displayCategory>ComboGenes</displayCategory>
+
+
+        <biostatCpx>4</biostatCpx>
+        <biostatMet>2</biostatMet>
+
+        <statOffsets>
+            <MeleeHitChance>0.20</MeleeHitChance>
+            <PsychicSensitivity>0.50</PsychicSensitivity>
+            <MoveSpeed>0.15</MoveSpeed>
+        </statOffsets>
+    </GeneDef> -->
+
+</Defs>

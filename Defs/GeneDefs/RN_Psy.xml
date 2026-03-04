@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <GeneDef>
+        <defName>RN_EVOPsylink</defName>
+        <label>evo psylink</label>
+        <iconPath>Genes/Gene_NaturalPsylink</iconPath>
+        <description>Carriers of this gene have a slightly restructured brain, providing them with a natural psylink and many different psychic capabilities.</description>
+        
+        <displayCategory>ComboGenes</displayCategory>
+        <displayOrderInCategory>6002</displayOrderInCategory>
+        
+        <biostatCpx>4</biostatCpx>
+        <biostatMet>-4</biostatMet>
+        
+        <exclusionTags>
+            <li>PsychicAbility</li>
+        </exclusionTags>
+        
+        <statOffsets>
+            <PsychicSensitivity>0.60</PsychicSensitivity>
+            <MeditationFocusGain>0.50</MeditationFocusGain>
+            <PsychicEntropyRecoveryRate>0.3</PsychicEntropyRecoveryRate>
+        </statOffsets>
+        
+        <customEffectDescriptions>
+            <li>Losing this gene will make the colonist lose all psylink levels, though they will not forget the psycasts they have already learned.</li>
+        </customEffectDescriptions>
+        
+        <modExtensions>
+            <li Class="VEF.Genes.GeneExtension">
+                <hediffsToBodyParts>
+                    <li>
+                        <hediff>PsychicAmplifier</hediff>
+                        <bodyparts>
+                            <li>Brain</li>
+                        </bodyparts>
+                    </li>
+                </hediffsToBodyParts>
+            </li>
+        </modExtensions>
+        
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>psy</symbol></li>
+                <li><symbol>senso</symbol></li>
+                <li><symbol>sensi</symbol></li>
+            </prefixSymbols>
+        </symbolPack>        
+    </GeneDef>
+</Defs>

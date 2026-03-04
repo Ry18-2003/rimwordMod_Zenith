@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Zenith Race</name>
+	<packageId>ricklord.zenithrace</packageId>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<author>ricklord</author>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+		<li>
+			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+			<displayName>Vanilla Expanded Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
+			<downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
+		</li>
+		<li>
+		    <packageId>Ludeon.RimWorld.Biotech</packageId>
+		    <displayName>Biotech</displayName>
+	    </li>
+	</modDependencies>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>vanillaracesexpanded.highmate</li>
+		<li>vanillaracesexpanded.genie</li>
+		<li>vanillaracesexpanded.android</li>
+		<li>vanillaracesexpanded.archon</li>
+		<li>vanillaracesexpanded.lycanthrope</li>
+		<li>vanillaracesexpanded.saurid</li>
+		<li>vanillaracesexpanded.fungoid</li>
+		<li>vanillaracesexpanded.pigskin</li>
+		<li>vanillaracesexpanded.insector</li>
+		<li>vanillaracesexpanded.waster</li>
+		<li>vanillaracesexpanded.hussar</li>
+		<li>vanillaracesexpanded.sanguophage</li>
+		<li>vanillaracesexpanded.phytokin</li>
+		<li>vanillaracesexpanded.starjack</li>
+		<li>ElSov.Highborn</li>
+	</loadAfter>
+	<description>
+The Zeniths: the Twilight
+
+The Zeniths represent the absolute biological limit of the primate order. They did not evolve to depend on external tools; instead, they transformed their own bodies and minds into the ultimate instrument. They are beings of violent contrasts: possessing the raw strength of an apex predator and the eloquence of an intergalactic philosopher. It is said that a Zenith needs no crown to be recognized as royalty; their posture and gaze alone command natural submission.
+
+The Eternal Mind
+
+The central pillar of Zenith superiority lies in their hyper-efficient neural metabolism. They possess one of the greatest learning capacities in the known universe, processing information at speeds incomprehensible to ordinary humans. Thanks to perfect muscle memory, a Zenith never suffers from skill decay; once they master a technique—whether the forging of a blade or a forgotten dialect—they retain it forever. This efficiency allows them to operate with significantly less rest, remaining vigilant while other races succumb to exhaustion.
+
+The Empire and the Genesis of Servants
+
+As born emperors, Zeniths harbor a visceral contempt for degrading labor. To avoid the "filth" of the mines, they enslaved races for millennia, selecting the most fit through relentless eugenics that eventually gave rise to the Dirtmoles. In this cosmology, the Zeniths are the sun and the command on the surface, while the Dirtmoles are their living tools—biological extensions molded to dig and sustain an empire that refuses to touch the ground.
+
+The Biological Melancholy
+
+The cost of perfection was the very stability of the species. In attempting to "cleanse" the genetic code of any imperfection, something fundamental broke:
+
+    Chronic Unhappiness: They perceive the world with unbearable intensity. Every aesthetic flaw, every foul odor, and every injustice weighs upon their minds like a ton, plunging them into a constant existential depression.
+
+    Thermal Fragility: At the height of their civilization, the Zeniths molded their home planet into a "perfect greenhouse." Their bodies forgot how to process thermal variations; the cold wind of a rimworld is, to them, a physical reminder of their fall.
+
+    The End of the Lineage: Biological barrenness was an evolutionary miscalculation. They possess a burning desire for continuity, but biology denies them a future. Each Zenith is a living, sterile monument to what their race once was.
+
+    Mineral Ineptitude: They view mining as an affront to their nature. If something lies beneath the earth, a Dirtmole must bring it to light.
+
+The Aesthetics of the Slaughter
+
+Unlike other races, Zeniths view firearms with disdain, treating the act of shooting as a sadistic and performative art:
+
+    The Fatal Delay: They hesitate before firing to admire the dread in the prey's eyes, like a painter studying a canvas.
+
+    The Purposeful Miss: They frequently "miss" vital shots to observe the target's reaction to the near impact, studying the body language of pure panic.
+
+    Painting with Blood: Incapable of producing conventional art, they transferred their creativity to the battlefield, where the suffering of others fills the void in their souls.
+
+The Paradox of Love and Horror
+
+This race lives under the shadow of extinction. Their lineage's psychic bond creates a bizarre contrast: they are devoted lovers to one another, capable of eternal and profound ties, yet cold monsters to the rest of the universe. This duality makes them the most loyal allies and the cruelest enemies one can encounter on the Rim.
+
+Epilogue: The Zenith on the Rim
+
+The Zenith is a paradoxical figure. They can convince an enemy to surrender with words alone, using their social excellence to disarm armies. However, if diplomacy fails, they will not seek cover; they will advance and tear the opponent apart with their bare hands in seconds.		
+	</description>
+</ModMetaData>

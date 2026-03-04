@@ -1,0 +1,24 @@
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="BaseFilth">
+    <defName>RN_Filth_Blackblood</defName>
+    <label>blackblood</label>
+    <statBases>
+      <Beauty>-25</Beauty> <Cleanliness>-15</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(20, 20, 20, 255)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>40~45</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>65</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <maxThickness>2</maxThickness>
+    </filth>
+    <pathCost>25</pathCost> 
+  </ThingDef>
+</Defs> -->

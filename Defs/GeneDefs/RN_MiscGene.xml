@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- Intolerant -->
+    <GeneDef>
+        <defName>RN_TempWeakness</defName>
+        <label>intolerant to temperature</label>
+        <labelShortAdj>fragile</labelShortAdj>
+        <description>Individuals with this gene are far less adaptable to temperature changes.</description>
+        <iconPath>Genes/RN_IntolerantTemp</iconPath>
+        <displayCategory>ComboGenes</displayCategory>
+        
+        <statOffsets>
+            <ComfyTemperatureMin>5</ComfyTemperatureMin>
+            <ComfyTemperatureMax>-5</ComfyTemperatureMax>
+        </statOffsets>
+        
+        <exclusionTags>
+            <li>MinTemperature</li>
+            <li>MaxTemperature</li>
+        </exclusionTags>
+        
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>3</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>warm</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <!-- HAND -->
+    <GeneDef>
+        <defName>RN_HandsTailWings</defName>
+        <label>evo primate</label>
+        <description>The bearer possesses elongated fingers, an agile tail, and a set of glidewings. These functions as extra limbs and stabilizers, significantly increasing manipulation and mobility.</description>
+        
+        <iconPath>Genes/RN_EVO</iconPath>
+        <iconColor>(0.8, 0.8, 0.8)</iconColor>
+        <displayCategory>ComboGenes</displayCategory>
+        <displayOrderInCategory>500</displayOrderInCategory>
+        
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-3</biostatMet>
+        
+        <capMods>
+            <li>
+                <capacity>Manipulation</capacity>
+                <postFactor>1.1</postFactor>
+            </li>
+            <li>
+                <capacity>Manipulation</capacity>
+                <offset>0.05</offset>
+            </li>
+        </capMods>
+
+        <statOffsets>
+            <MoveSpeed>0.05</MoveSpeed>
+        </statOffsets>
+
+        <statFactors>
+            <CarryWeight MayRequire="CETeam.CombatExtended">1.5</CarryWeight>
+        </statFactors>
+
+        <statOffsets>
+            <CarryBulk MayRequire="CETeam.CombatExtended">25</CarryBulk>
+        </statOffsets>
+        
+        <modExtensions>
+            <li Class="VEF.Genes.GeneExtension">
+                <hediffToWholeBody>RN_Glidewings</hediffToWholeBody>
+            </li>
+        </modExtensions>
+
+        <customEffectDescriptions>
+            <li>It is not slowed down by objects on the ground.</li>
+        </customEffectDescriptions>
+        
+        <renderNodeProperties>
+            <li>
+                <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+                <texPath>Things/Pawn/Humanlike/BodyAttachments/SmoothTail/SmoothTail</texPath>
+                <colorType>Hair</colorType>
+                <overrideMeshSize>(1.3, 1.3)</overrideMeshSize>
+                <parentTagDef>Body</parentTagDef>
+                <drawData>
+                    <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+                    <defaultData>
+                        <layer>-3</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <offset>(0, 0, -0.15)</offset>
+                        <layer>90</layer>
+                    </dataNorth>
+                    <dataSouth>
+                        <offset>(0, 0, -0.15)</offset>
+                    </dataSouth>
+                    <dataEast>
+                        <offset>(-0.5, 0, -0.15)</offset>
+                    </dataEast>
+                    <dataWest>
+                        <offset>(0.5, 0, -0.15)</offset>
+                    </dataWest>
+                </drawData>
+            </li>
+            <li>
+                <parentTagDef>Body</parentTagDef>
+                <texPath>Pawn/Gliderwings/Gliderwings</texPath>
+                <drawSize>(0.6, 0.6)</drawSize>
+                <colorType>Skin</colorType>
+                <drawData>
+                    <defaultData>
+                        <layer>-2</layer> 
+                    </defaultData>
+                    <dataNorth>
+                        <layer>90</layer>
+                        <offset>(0, 0, 0)</offset>
+                    </dataNorth>
+                    <dataEast>
+                        <offset>(-0.4, 0, 0)</offset>
+                    </dataEast>
+                    <dataWest>
+                        <offset>(0.4, 0, 0)</offset>
+                    </dataWest>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+
+        <exclusionTags>
+            <li>Tail</li>
+            <li>Hands</li>
+            <li>Wings</li> 
+        </exclusionTags>
+
+        <abilities>
+            <li>LeapTailWings</li>
+        </abilities>
+    </GeneDef>
+
+    <!-- FOOD EFFICIENT -->
+    <GeneDef>
+        <defName>RN_FoodEfficience</defName>
+        <label>efficient eater</label>
+        <description>Carriers of this gene have strong, capable teeth and an incredibly big stomach.</description>
+        <iconPath>Genes/RN_Efficient</iconPath>
+    
+        <displayCategory>ComboGenes</displayCategory>
+        <displayOrderInCategory>60</displayOrderInCategory>
+        
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <statFactors>
+            <MaxNutrition>1.25</MaxNutrition>
+            <EatingSpeed>1.3</EatingSpeed>
+        </statFactors>
+        <exclusionTags>
+            <li>AG_TeethStrength</li>
+        </exclusionTags>
+        <selectionWeight>0</selectionWeight>
+    </GeneDef>
+
+    <!-- LEARNING -->
+    <GeneDef> 
+        <defName>RN_HyperLearner</defName>
+        <label>hyper learner</label>
+        <description>Carriers of this gene possess a hyper-efficient neural metabolism. They require significantly less rest, process information 50% faster, and retain muscle memory perfectly, meaning they never suffer from skill decay over time.</description> 
+        <iconPath>UI/Icons/Genes/Gene_FastLearning</iconPath>
+        
+        <displayCategory>ComboGenes</displayCategory>
+        <displayOrderInCategory>20</displayOrderInCategory>
+        
+        <statOffsets> 
+            <GlobalLearningFactor>0.5</GlobalLearningFactor>
+        </statOffsets>
+        <statFactors> 
+            <RestFallRateFactor>0.85</RestFallRateFactor>
+        </statFactors>
+
+        <customEffectDescriptions>
+            <li>Skill levels never decay over time.</li>
+        </customEffectDescriptions>
+        
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-6</biostatMet>
+        
+        <exclusionTags>
+            <li>VRE_SkillGenes</li>
+            <li>VRE_Curiosity</li>
+            <li>Curiosity</li>
+            <li>SkillGenes</li>
+            <li>Learning</li>
+        </exclusionTags>
+        
+        <modExtensions>
+            <li Class="VEF.Genes.GeneExtension">
+                <globalSkillLossMultiplier>0</globalSkillLossMultiplier>
+            </li>
+        </modExtensions>
+        
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>wake</symbol></li>
+                <li><symbol>night</symbol></li>
+                <li><symbol>brain</symbol></li>
+                <li><symbol>nerd</symbol></li>
+                <li><symbol>smart</symbol></li>
+                <li><symbol>corti</symbol></li>
+                <li><symbol>neuro</symbol></li>
+                <li><symbol>mnemo</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>nerd</symbol></li>
+                <li><symbol>brain</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+
+    <!-- PESSIMIST -->
+    <GeneDef>
+        <defName>RN_Pessimist</defName>
+        <label>unhappy</label>
+        <description>Carriers of this gene are predisposed to pessimistic perceptions. They'll tend to interpret things negatively and have lower mood than others.</description>
+        <iconPath>UI/Icons/Genes/Gene_Pessimist</iconPath>
+        <displayCategory>ComboGenes</displayCategory>
+        <displayOrderInCategory>10</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>8</biostatMet>
+        
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>sad</symbol></li>
+                <li><symbol>gray</symbol></li>
+                <li><symbol>rain</symbol></li>
+                <li><symbol>lachry</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+        
+        <exclusionTags>
+            <li>Mood</li>
+        </exclusionTags>
+    </GeneDef>
+
+</Defs>

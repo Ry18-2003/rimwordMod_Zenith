@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Patch para facção -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="Empire"]/xenotypeSet/xenotypeChances</xpath>
+		<value>
+			<RN_Hunters>0.01</RN_Hunters>
+			<RN_PsyHunters>0.001</RN_PsyHunters>
+		</value>
+	</Operation>
+
+    <!-- PIRATAS -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/FactionDef[defName="Pirate"]/xenotypeSet/xenotypeChances</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/FactionDef[defName="Pirate"]/xenotypeSet/xenotypeChances</xpath>
+            <value>
+                <RN_Hunters>0.008</RN_Hunters>
+                <RN_PsyHunters>0.0007</RN_PsyHunters>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/FactionDef[defName="Pirate"]/xenotypeSet</xpath>
+            <value>
+                <xenotypeChances>
+                    <RN_Hunters>0.008</RN_Hunters>
+                    <RN_PsyHunters>0.0007</RN_PsyHunters>
+                </xenotypeChances>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <!-- FACÇÃO NEUTRA (OutlanderCivil) -->
+<Operation Class="PatchOperationConditional">
+        <xpath>/Defs/FactionDef[defName="OutlanderCivil"]/xenotypeSet</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/FactionDef[defName="OutlanderCivil"]/xenotypeSet/xenotypeChances</xpath>
+            <value>
+                <RN_Hunters>0.025</RN_Hunters>
+                <RN_PsyHunters>0.001</RN_PsyHunters>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/FactionDef[defName="OutlanderCivil"]</xpath>
+            <value>
+                <xenotypeSet>
+                    <xenotypeChances>
+                        <RN_Hunters>0.025</RN_Hunters>
+                        <RN_PsyHunters>0.001</RN_PsyHunters>
+                    </xenotypeChances>
+                </xenotypeSet>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <!-- FACÇÃO ÁSPERA (OutlanderRough) -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/FactionDef[defName="OutlanderRough"]/xenotypeSet</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/FactionDef[defName="OutlanderRough"]/xenotypeSet/xenotypeChances</xpath>
+            <value>
+                <RN_Hunters>0.018</RN_Hunters>
+                <RN_PsyHunters>0.001</RN_PsyHunters>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/FactionDef[defName="OutlanderRough"]</xpath>
+            <value>
+                <xenotypeSet>
+                    <xenotypeChances>
+                        <RN_Hunters>0.018</RN_Hunters>
+                        <RN_PsyHunters>0.001</RN_PsyHunters>
+                    </xenotypeChances>
+                </xenotypeSet>
+            </value>
+        </nomatch>
+    </Operation>
+
+  <!-- Só tenta adicionar ability se Highmate existir -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/AbilityDef[defName="VRE_InitiateLovin"]</xpath>
+		
+		<match Class="PatchOperationAdd">
+		<xpath>Defs/GeneDef[defName="RN_TheEndLineage"]</xpath>
+		<value>
+			<abilities>
+				<li>VRE_InitiateLovin</li>
+			</abilities>
+		</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="Unstoppable"]/exclusionTags</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="Unstoppable"]/exclusionTags</xpath>
+            <value>
+                <li>Stoppable</li>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="Unstoppable"]</xpath>
+            <value>
+                <exclusionTags>
+                    <li>Stoppable</li>
+                </exclusionTags>
+            </value>
+        </nomatch>
+    </Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/GeneDef[defName = "Sterile"]/exclusionTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/GeneDef[defName = "Sterile"]</xpath>
+			<value>
+				<exclusionTags>
+					<li>AG_Fertility</li>
+				</exclusionTags>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/GeneDef[defName = "Sterile"]/exclusionTags</xpath>
+			<value>
+				<li>AG_Fertility</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="PsychicBonding"]/exclusionTags</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="PsychicBonding"]/exclusionTags</xpath>
+            <value>
+                <li>PsyLove</li>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="PsychicBonding"]</xpath>
+            <value>
+                <exclusionTags>
+                    <li>PsyLove</li>
+                </exclusionTags>
+            </value>
+        </nomatch>
+    </Operation>
+</Patch>

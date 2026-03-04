@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- GLIDEWINGS HEDIFF -->
+    <HediffDef>
+        <defName>RN_Glidewings</defName>
+        <label>glidewings</label>
+        <description>A small set of wings growing from this person's shoulderblades. They are not capable of flight, but they prevent the user from being slowed down by most obstacles.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <defaultLabelColor>(0.6, 0.8, 0.6)</defaultLabelColor>
+        <comps>
+            <li Class="VEF.AnimalBehaviours.HediffCompProperties_Floating" />
+        </comps>
+    </HediffDef>
+
+    <!-- MINOR REGENERATION HEDIFF -->
+    <HediffDef>
+        <defName>RN_RegenerationMinor</defName>
+        <label>regeneration minor</label>
+        <description>This person has a faint distributed network of specialized mechanites in their bloodstream that periodically tend to internal wounds, regenerating them without any need for rest.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="VEF.AnimalBehaviours.HediffCompProperties_Regeneration">
+                <rateInTicks>3000</rateInTicks>
+            </li>
+        </comps>
+    </HediffDef>
+</Defs>
