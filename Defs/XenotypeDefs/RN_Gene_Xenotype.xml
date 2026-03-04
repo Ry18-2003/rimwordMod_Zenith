@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <XenotypeDef>
-		<defName>RN_Hunters</defName>
-		<label>Hunters</label>
-		<description>Hunters are generally masters of hand-to-hand combat, with good handling, crafting, and mobility techniques. They are also excellent communicators and possess one of the best learning capacities in the universe. However, they are poorly adapted to harsh climates, suffer from chronic unhappiness, and have a low reproduction rate. Inept at mining, they practically created the Dirtmole.</description>
-		<iconPath>XenotypeIcons/RN_Hunter</iconPath>
+		<defName>RN_Zenith</defName>
+		<label>Zeniths</label>
+		<description>Zeniths are generally masters of hand-to-hand combat, with good handling, crafting, and mobility techniques. They are also excellent communicators and possess one of the best learning capacities in the universe. However, they are poorly adapted to harsh climates, suffer from chronic unhappiness, and have a low reproduction rate. Inept at mining, they practically created the Dirtmole.</description>
+		<iconPath>XenotypeIcons/RN_Zenith</iconPath>
 		<genes>
 			<li>RN_TempWeakness</li>
 			<li>RN_HandsTailWings</li>
@@ -28,10 +28,10 @@
 		<inheritable>true</inheritable>
 	</XenotypeDef>
 	<XenotypeDef>
-		<defName>RN_PsyHunters</defName>
-		<label>Psy Hunters</label>
-		<description>The Psy Hunters gave up some skills in order to evolve psychically, yet most are still masters of hand-to-hand combat, with good handling and mobility techniques. They have clear communication and possess one of the greatest learning capacities in the universe. However, they are poorly adapted to harsh climates, suffer from chronic unhappiness exacerbated by their psychic powers, and have a low reproduction rate. Inept at mining, they practically created DirtMole.</description>
-		<iconPath>XenotypeIcons/RN_PsyHunter</iconPath>
+		<defName>RN_PsyZenith</defName>
+		<label>Psy Zeniths</label>
+		<description>The Psy Zeniths gave up some skills in order to evolve psychically, yet most are still masters of hand-to-hand combat, with good handling and mobility techniques. They have clear communication and possess one of the greatest learning capacities in the universe. However, they are poorly adapted to harsh climates, suffer from chronic unhappiness exacerbated by their psychic powers, and have a low reproduction rate. Inept at mining, they practically created DirtMole.</description>
+		<iconPath>XenotypeIcons/RN_PsyZenith</iconPath>
 		<genes>
 			<li>RN_TempWeakness</li>
 			<li>RN_HandsTailWings</li>
