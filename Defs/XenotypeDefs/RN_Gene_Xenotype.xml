@@ -27,7 +27,7 @@
 		</genes>
 		<inheritable>true</inheritable>
 	</XenotypeDef>
-	<XenotypeDef>
+	<XenotypeDef MayRequire="Ludeon.RimWorld.Royalty">
 		<defName>RN_PsyZeniths</defName>
 		<label>Psy Zeniths</label>
 		<description>The Psy Zeniths gave up some skills in order to evolve psychically, yet most are still masters of hand-to-hand combat, with good handling and mobility techniques. They have clear communication and possess one of the greatest learning capacities in the universe. However, they are poorly adapted to harsh climates, suffer from chronic unhappiness exacerbated by their psychic powers, and have a low reproduction rate. Inept at mining, they practically created DirtMole.</description>

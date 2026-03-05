@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<!-- Patch para facção -->
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/FactionDef[defName="Empire"]/xenotypeSet/xenotypeChances</xpath>
-		<value>
-			<RN_Zeniths>0.01</RN_Zeniths>
-			<RN_PsyZeniths>0.001</RN_PsyZeniths>
-		</value>
-	</Operation>
 
     <!-- PIRATAS -->
     <Operation Class="PatchOperationConditional">
@@ -16,7 +8,7 @@
             <xpath>/Defs/FactionDef[defName="Pirate"]/xenotypeSet/xenotypeChances</xpath>
             <value>
                 <RN_Zeniths>0.008</RN_Zeniths>
-                <RN_PsyZeniths>0.0007</RN_PsyZeniths>
+                <RN_PsyZeniths MayRequire="Ludeon.RimWorld.Royalty">0.0007</RN_PsyZeniths>
             </value>
         </match>
         <nomatch Class="PatchOperationAdd">
@@ -24,7 +16,7 @@
             <value>
                 <xenotypeChances>
                     <RN_Zeniths>0.008</RN_Zeniths>
-                    <RN_PsyZeniths>0.0007</RN_PsyZeniths>
+                    <RN_PsyZeniths MayRequire="Ludeon.RimWorld.Royalty">0.0007</RN_PsyZeniths>
                 </xenotypeChances>
             </value>
         </nomatch>
@@ -37,7 +29,7 @@
             <xpath>/Defs/FactionDef[defName="OutlanderCivil"]/xenotypeSet/xenotypeChances</xpath>
             <value>
                 <RN_Zeniths>0.025</RN_Zeniths>
-                <RN_PsyZeniths>0.001</RN_PsyZeniths>
+                <RN_PsyZeniths MayRequire="Ludeon.RimWorld.Royalty">0.001</RN_PsyZeniths>
             </value>
         </match>
         <nomatch Class="PatchOperationAdd">
@@ -46,7 +38,7 @@
                 <xenotypeSet>
                     <xenotypeChances>
                         <RN_Zeniths>0.025</RN_Zeniths>
-                        <RN_PsyZeniths>0.001</RN_PsyZeniths>
+                        <RN_PsyZeniths MayRequire="Ludeon.RimWorld.Royalty">0.001</RN_PsyZeniths>
                     </xenotypeChances>
                 </xenotypeSet>
             </value>
@@ -60,7 +52,7 @@
             <xpath>/Defs/FactionDef[defName="OutlanderRough"]/xenotypeSet/xenotypeChances</xpath>
             <value>
                 <RN_Zeniths>0.018</RN_Zeniths>
-                <RN_PsyZeniths>0.001</RN_PsyZeniths>
+                <RN_PsyZeniths MayRequire="Ludeon.RimWorld.Royalty">0.001</RN_PsyZeniths>
             </value>
         </match>
         <nomatch Class="PatchOperationAdd">
@@ -69,7 +61,7 @@
                 <xenotypeSet>
                     <xenotypeChances>
                         <RN_Zeniths>0.018</RN_Zeniths>
-                        <RN_PsyZeniths>0.001</RN_PsyZeniths>
+                        <RN_PsyZeniths MayRequire="Ludeon.RimWorld.Royalty">0.001</RN_PsyZeniths>
                     </xenotypeChances>
                 </xenotypeSet>
             </value>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Defs>
-    <GeneDef>
+<Defs MayRequire="Ludeon.RimWorld.Royalty">
+    <GeneDef MayRequire="Ludeon.RimWorld.Royalty">
         <defName>RN_EVOPsylink</defName>
         <label>evo psylink</label>
         <iconPath>Genes/Gene_NaturalPsylink</iconPath>

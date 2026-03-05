@@ -16,7 +16,7 @@
       </li>
     </stages>
   </ThoughtDef>
-  <ThoughtDef>
+  <ThoughtDef MayRequire="Ludeon.RimWorld.Royalty">
     <defName>RN_EVOPsylink</defName>
     <workerClass>ThoughtWorker_AlwaysActive</workerClass>
     <validWhileDespawned>true</validWhileDespawned>

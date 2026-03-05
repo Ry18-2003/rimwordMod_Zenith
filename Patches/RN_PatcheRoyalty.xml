@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Ludeon.RimWorld.Royalty</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationConditional">
+                    <xpath>/Defs/FactionDef[defName="Empire"]/xenotypeSet</xpath>
+                    <match Class="PatchOperationAdd">
+                        <xpath>/Defs/FactionDef[defName="Empire"]/xenotypeSet/xenotypeChances</xpath>
+                        <value>
+                            <RN_Zeniths>0.01</RN_Zeniths>
+                            <RN_PsyZeniths>0.001</RN_PsyZeniths>
+                        </value>
+                    </match>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>/Defs/FactionDef[defName="Empire"]</xpath>
+                        <value>
+                            <xenotypeSet>
+                                <xenotypeChances>
+                                    <RN_Zeniths>0.01</RN_Zeniths>
+                                    <RN_PsyZeniths>0.001</RN_PsyZeniths>
+                                </xenotypeChances>
+                            </xenotypeSet>
+                        </value>
+                    </nomatch>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
