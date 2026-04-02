@@ -40,7 +40,6 @@
 
     <exclusionTags>
       <li>MeleeDodge</li>
-      <li>RangedAttackSpeed</li>
       <li>MeleeAttackSpeed</li>
       <li>MeleeDamage</li>
       <li>AG_Regeneration</li>

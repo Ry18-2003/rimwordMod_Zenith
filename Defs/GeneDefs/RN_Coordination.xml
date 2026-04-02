@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <GeneDef>
+    <defName>RN_CoordinationReflex</defName>
+    <label>Reflexes and coordination</label>
+    <iconPath>UI/Icons/Genes/GM_KeenReflexes</iconPath>
+    <description>Carriers of this gene have keen reflexes.</description>
+    <displayCategory>ComboGenes</displayCategory>
+    <displayOrderInCategory>63</displayOrderInCategory>
+    <biostatMet>-2</biostatMet>
+    <biostatCpx>2</biostatCpx>
+	<statOffsets>
+        <MeleeDodgeChance>1</MeleeDodgeChance>
+        <AimingDelayFactor>-0.1</AimingDelayFactor>
+    </statOffsets>
+    <statFactors>
+        <PawnTrapSpringChance>0.5</PawnTrapSpringChance>
+        <SurgerySuccessChanceFactor>1.1</SurgerySuccessChanceFactor>
+        <GeneralLaborSpeed>1.05</GeneralLaborSpeed>
+    </statFactors>
+    <symbolPack>
+        <prefixSymbols>
+            <li><symbol>sharp</symbol></li>
+            <li><symbol>fleet</symbol></li>
+        </prefixSymbols>
+        <suffixSymbols>
+            <li><symbol>dodger</symbol></li>
+        </suffixSymbols>
+    </symbolPack>
+
+    <exclusionTags>
+      <li>RN_C_R</li>
+    </exclusionTags>
+
+  </GeneDef>
+</Defs>

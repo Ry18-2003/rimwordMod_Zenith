@@ -6,11 +6,28 @@
     <label>Leap</label>
     <description>Leap to a nearby location using powerful limbs and tail momentum.</description>
     <iconPath>UI/Abilities/RN_WingShortJump</iconPath>
-    <cooldownTicksRange>1250</cooldownTicksRange>
+    <cooldownTicksRange>250</cooldownTicksRange>
 
     <verbProperties>
         <verbClass>Verb_CastAbilityJump</verbClass>
         <range>9.9</range>
+        <targetParams>
+            <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+    </verbProperties>
+
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>LeapTailWings2</defName>
+    <label>Leap</label>
+    <description>Leap to a nearby location using powerful limbs and tail momentum.</description>
+    <iconPath>UI/Abilities/RN_AWing</iconPath>
+    <cooldownTicksRange>625</cooldownTicksRange>
+
+    <verbProperties>
+        <verbClass>Verb_CastAbilityJump</verbClass>
+        <range>21.9</range>
         <targetParams>
             <canTargetLocations>true</canTargetLocations>
         </targetParams>

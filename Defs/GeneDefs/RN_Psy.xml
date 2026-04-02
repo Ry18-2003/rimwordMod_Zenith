@@ -18,7 +18,7 @@
         
         <statOffsets>
             <PsychicSensitivity>0.60</PsychicSensitivity>
-            <MeditationFocusGain>0.50</MeditationFocusGain>
+            <MeditationFocusGain>0.5</MeditationFocusGain>
             <PsychicEntropyRecoveryRate>0.3</PsychicEntropyRecoveryRate>
         </statOffsets>
         

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <GeneDef ParentName="CellInstabilityBase">
+    <defName>RN_Stability</defName>
+    <label>cell stability</label>
+    <description>Carriers of this gene need more metabolic energy to stay alive due to telomeric safeguards that promote stability in their cell-replication machinery.</description>
+    <displayCategory>ComboGenes</displayCategory>
+    <iconPath>Genes/RN_Gene_Stability</iconPath>
+    <biostatCpx>-4</biostatCpx>
+    <biostatMet>2</biostatMet>
+    <statFactors>
+      <LifespanFactor>1.5</LifespanFactor>
+      <CancerRate>.5</CancerRate>
+      <ImmunityGainSpeed>1.1</ImmunityGainSpeed>
+    </statFactors>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>RN_Pureblood</defName>
+    <label>pureblood</label>
+    <description>This genetic condition is the result of a pure, undiluted lineage.</description>
+    <iconPath>Genes/RN_PureBlood</iconPath>
+    <displayCategory>ComboGenes</displayCategory>
+    <biostatCpx>-8</biostatCpx>
+    <biostatMet>2</biostatMet>
+
+    <statOffsets>
+      <MeditationFocusGain>0.5</MeditationFocusGain>
+      <PsychicEntropyRecoveryRate>0.2</PsychicEntropyRecoveryRate>
+    </statOffsets>
+    
+  </GeneDef>
+</Defs>

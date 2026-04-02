@@ -81,6 +81,7 @@
 		</value>
 		</match>
 	</Operation>
+
 	<Operation Class="PatchOperationConditional">
         <xpath>Defs/GeneDef[defName="Unstoppable"]/exclusionTags</xpath>
         <match Class="PatchOperationAdd">
@@ -98,6 +99,7 @@
             </value>
         </nomatch>
     </Operation>
+
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
 		<xpath>/Defs/GeneDef[defName = "Sterile"]/exclusionTags</xpath>
@@ -116,6 +118,101 @@
 			</value>
 		</match>
 	</Operation>
+    
+    <Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/GeneDef[defName = "DarkVision"]/exclusionTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/GeneDef[defName = "DarkVision"]</xpath>
+			<value>
+				<exclusionTags>
+					<li>RN_Vision</li>
+				</exclusionTags>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/GeneDef[defName = "DarkVision"]/exclusionTags</xpath>
+			<value>
+				<li>RN_Vision</li>
+			</value>
+		</match>
+	</Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/GeneDef[defName="VRE_SuperiorDarkVision"]</xpath>
+        <match Class="PatchOperationConditional">
+            <xpath>/Defs/GeneDef[defName="VRE_SuperiorDarkVision"]/exclusionTags</xpath>
+            <success>Always</success>
+            <match Class="PatchOperationAdd">
+                <xpath>/Defs/GeneDef[defName="VRE_SuperiorDarkVision"]/exclusionTags</xpath>
+                <value>
+                <li>RN_Vision</li>
+                </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/GeneDef[defName="VRE_SuperiorDarkVision"]</xpath>
+                <value>
+                <exclusionTags>
+                    <li>RN_Vision</li>
+                </exclusionTags>
+                </value>
+            </nomatch>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/GeneDef[defName="GM_GoodFineMotor"]</xpath>
+        <match Class="PatchOperationConditional">
+            <xpath>/Defs/GeneDef[defName="GM_GoodFineMotor"]/exclusionTags</xpath>
+            <success>Always</success>
+            <match Class="PatchOperationAdd">
+                <xpath>/Defs/GeneDef[defName="GM_GoodFineMotor"]/exclusionTags</xpath>
+                <value>
+                    <li>RN_C_R</li>
+                </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/GeneDef[defName="GM_GoodFineMotor"]</xpath>
+                <value>
+                <exclusionTags>
+                    <li>RN_C_R</li>
+                </exclusionTags>
+                </value>
+            </nomatch>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/GeneDef[defName="GM_KeenReflexes"]</xpath>
+        <match Class="PatchOperationConditional">
+            <xpath>/Defs/GeneDef[defName="GM_KeenReflexes"]/exclusionTags</xpath>
+            <success>Always</success>
+            <match Class="PatchOperationAdd">
+                <xpath>/Defs/GeneDef[defName="GM_KeenReflexes"]/exclusionTags</xpath>
+                <value>
+                    <li>RN_C_R</li>
+                </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/GeneDef[defName="GM_KeenReflexes"]</xpath>
+                <value>
+                <exclusionTags>
+                    <li>RN_C_R</li>
+                </exclusionTags>
+                </value>
+            </nomatch>
+        </match>
+    </Operation>
+    
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/ThoughtDef[defName = "EnvironmentDark"]/nullifyingGenes</xpath>
+		<value>
+            <li>RN_EnhancedEye</li>
+		</value>
+	</Operation>
+
+    
 	<Operation Class="PatchOperationConditional">
         <xpath>Defs/GeneDef[defName="PsychicBonding"]/exclusionTags</xpath>
         <match Class="PatchOperationAdd">
@@ -133,4 +230,5 @@
             </value>
         </nomatch>
     </Operation>
+    
 </Patch>

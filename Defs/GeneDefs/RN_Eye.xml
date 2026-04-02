@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs MayRequire="Ludeon.RimWorld.Royalty">
+    <GeneDef MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>RN_EnhancedEye</defName>
+        <label>Enhanced eyes</label>
+        <iconPath>UI/Icons/Genes/Gene_Darkvision</iconPath>
+        <description>Enhanced eyes</description>
+        <displayCategory>ComboGenes</displayCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <exclusionTags>
+            <li>RN_Vision</li>
+        </exclusionTags>
+		<capMods>
+			<li>
+				<capacity>Sight</capacity>
+				<offset>0.2</offset>
+			</li>
+		</capMods>
+            <statOffsets>
+				<NightVisionEfficiency MayRequire="CETeam.CombatExtended">0.8</NightVisionEfficiency>
+			</statOffsets>
+        <ignoreDarkness>true</ignoreDarkness>
+    </GeneDef>
+</Defs>

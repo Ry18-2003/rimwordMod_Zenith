@@ -3,7 +3,7 @@
     <!-- GLIDEWINGS HEDIFF -->
     <HediffDef>
         <defName>RN_Glidewings</defName>
-        <label>glidewings</label>
+        <label>Wings</label>
         <description>A small set of wings growing from this person's shoulderblades. They are not capable of flight, but they prevent the user from being slowed down by most obstacles.</description>
         <hediffClass>HediffWithComps</hediffClass>
         <scenarioCanAdd>false</scenarioCanAdd>
@@ -14,6 +14,11 @@
         <comps>
             <li Class="VEF.AnimalBehaviours.HediffCompProperties_Floating" />
         </comps>
+        <stages>
+            <li>
+                <everVisible>false</everVisible>
+            </li>
+        </stages>
     </HediffDef>
 
     <!-- MINOR REGENERATION HEDIFF -->
@@ -31,5 +36,10 @@
                 <rateInTicks>3000</rateInTicks>
             </li>
         </comps>
+            <stages>
+            <li>
+                <everVisible>false</everVisible>
+            </li>
+        </stages>
     </HediffDef>
 </Defs>

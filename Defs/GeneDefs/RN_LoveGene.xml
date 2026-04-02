@@ -25,7 +25,7 @@
     <customEffectDescriptions>
       <li>Romance attempts always succeed.</li>
       <li>Gains psychic bond with first romantic partner.</li>
-      <li>Increases the chance of lovin.</li>
+      <li>Increases the chance of lovin. x2.5</li>
       <li>Some traits are shared with the partner.</li>
       <li>Slow gestation.</li>
     </customEffectDescriptions>
@@ -33,6 +33,52 @@
     <biostatCpx>1</biostatCpx>
     <biostatMet>1</biostatMet>
 
+    <exclusionTags>
+      <li>Libido</li>
+      <li>Fertility</li>
+      <li>AG_Gestation</li>
+			<li>AG_Fertility</li>
+      <li>PsyLove</li>
+    </exclusionTags>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>RN_TheEndLineage2</defName>
+    <label>The End of the Lineage (EXTRA)</label>
+    <description>Carriers have strong sexual drive but reduced reproductive success.</description>
+
+    <geneClass>Verse.Gene_PsychicBonding</geneClass>
+    <iconPath>Genes/RN_Love</iconPath>
+
+    <displayCategory>ComboGenes</displayCategory>
+    <displayOrderInCategory>100</displayOrderInCategory>
+
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension">
+        <pregnancySpeedFactor>0.5</pregnancySpeedFactor>
+      </li>
+    </modExtensions>
+
+    <lovinMTBFactor>0.1</lovinMTBFactor>
+    <statFactors>
+      <Fertility>0.1</Fertility>
+    </statFactors>
+
+    <customEffectDescriptions>
+      <li>Romance attempts always succeed.</li>
+      <li>Gains psychic bond with first romantic partner.</li>
+      <li>Increases the chance of lovin. x10</li>
+      <li>Some traits are shared with the partner.</li>
+      <li>Slow gestation.</li>
+    </customEffectDescriptions>
+
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>1</biostatMet>
+
+    <abilities MayRequire="vanillaracesexpanded.highmate">
+			<li MayRequire="vanillaracesexpanded.highmate">VRE_InitiateLovin</li>
+		</abilities>
+    
     <exclusionTags>
       <li>Libido</li>
       <li>Fertility</li>
